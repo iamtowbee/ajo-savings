@@ -13,7 +13,7 @@ import { Input } from "./ui/input";
 import { Member } from "./SavingsGroup";
 
 interface RegisterProps {
-  onAddMember(member: any): void;
+  onAddMember(member: Member): void;
   members: Member[];
 }
 
