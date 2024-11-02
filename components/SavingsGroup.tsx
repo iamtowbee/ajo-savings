@@ -17,8 +17,13 @@ const SavingsGroup = () => {
   const [members, setMembers] = useState<Member[]>([]);
   const [totalSavings, setTotalSavings] = useState(0);
 
+  
   useEffect(() => {
-    return () => {};
+    const newTotalSavings = members.reduce(
+      (sum, member) => sum + member.amount,
+      0
+    );
+    setTotalSavings(newTotalSavings);
   }, [members]);
 
   const addMember = (newMember: Member) => {
