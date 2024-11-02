@@ -10,12 +10,14 @@ import {
 } from "./ui/select";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { Member } from "./SavingsGroup";
 
 interface RegisterProps {
   onAddMember(member: any): void;
+  members: Member[];
 }
 
-const RegisterForm: React.FC<RegisterProps> = ({ onAddMember }) => {
+const RegisterForm: React.FC<RegisterProps> = ({ onAddMember, members }) => {
   const [name, setName] = useState("");
   const [tier, setTier] = useState("");
 
@@ -29,6 +31,10 @@ const RegisterForm: React.FC<RegisterProps> = ({ onAddMember }) => {
     e.preventDefault();
 
     if (!name || !tier) return;
+    if (members.map((member) => member.name == name)) {
+      alert("Duplicate user!");
+      return;
+    }
 
     const selectedTier = tiers.find((t) => t.id === parseInt(tier));
     if (!selectedTier) return;

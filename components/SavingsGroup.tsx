@@ -5,7 +5,7 @@ import MemberList from "./MemberList";
 import SavigsDashboard from "./SavigsDashboard";
 import Withdrawal from "./Withdrawal";
 
-interface Member {
+export interface Member {
   id: number;
   name: string;
   tier: number;
@@ -17,7 +17,6 @@ const SavingsGroup = () => {
   const [members, setMembers] = useState<Member[]>([]);
   const [totalSavings, setTotalSavings] = useState(0);
 
-  
   useEffect(() => {
     const newTotalSavings = members.reduce(
       (sum, member) => sum + member.amount,
@@ -36,7 +35,7 @@ const SavingsGroup = () => {
 
   return (
     <div>
-      <RegisterForm onAddMember={addMember} />
+      <RegisterForm onAddMember={addMember} members={members} />
       <SavigsDashboard
         totalSavings={totalSavings}
         memberCount={members.length}
