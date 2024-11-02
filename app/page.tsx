@@ -7,7 +7,7 @@ export default function Home() {
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
         <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
           <div className="max-w-md mx-auto">
-            <h1 className="text-xl font-semibold max-w-md mx-auto py-2.5">
+            <h1 className="text-2xl font-semibold max-w-md mx-auto py-2.5">
               Ajo - savings group app
             </h1>
             {/* TODO: will add tyhe mainpage client components here */}
