@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ajo - Savings App
+
+Ajo is a web application designed to help users save money collaboratively. Whether you're saving for a group vacation, a community project, or personal goals, Ajo makes it easy to manage contributions and track progress.
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- **Group Savings**: Create and manage savings groups with friends or family.
+- **Progress Tracking**: Visualize your savings progress with charts and graphs.
+- **Notifications**: Get reminders for contributions and milestones.
+- **User Accounts**: Secure user authentication and profile management.
+- **Responsive Design**: Access the app from any device.
 
 ## Getting Started
 
-First, run the development server:
+To get started with Ajo, follow the instructions below to set up the application on your local machine.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (version 14 or higher)
+- pnpm (Node Package Manager)
+- A web browser (Chrome, Firefox, etc.)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/iamtowbee/web3bridge-test.git ajo-savings-app
+   cd ajo-savings-app
+   ```
 
-## Learn More
+2. **Install dependencies**:
+   ```bash
+   pnpm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Run the application**:
+   ```bash
+   npm start
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Open your browser** and navigate to `http://localhost:3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+Once the application is running, you can:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Create an Account**: Enter your name and elect a tier to start saving.
+<!-- TODO: - **Join a Group**: Enter a group code to join an existing savings group. -->
+- **Make Contributions**: Add your contributions to the group savings.
+- **Track Progress**: View the savings progress and milestones achieved.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+We welcome contributions! If you'd like to contribute to Ajo, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
+
+<!-- ## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. -->
+
+---
+
+Thank you for using Ajo! We hope it helps you achieve your savings goals.
