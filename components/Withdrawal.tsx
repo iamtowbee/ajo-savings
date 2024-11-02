@@ -17,7 +17,7 @@ interface Props {
     name: string;
     tier: number;
     amount: number;
-    interest: number;
+    interset: number;
   }[];
   onWithdraw(id: number): void;
 }

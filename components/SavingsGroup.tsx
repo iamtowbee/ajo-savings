@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import RegisterForm from "@/components/RegisterForm";
 import MemberList from "./MemberList";
+import SavigsDashboard from "./SavigsDashboard";
+import Withdrawal from "./Withdrawal";
 
 interface Member {
   id: number;
@@ -30,8 +32,12 @@ const SavingsGroup = () => {
   return (
     <div>
       <RegisterForm onAddMember={addMember} />
-
+      <SavigsDashboard
+        totalSavings={totalSavings}
+        memberCount={members.length}
+      />
       <MemberList members={members} />
+      <Withdrawal members={members} onWithdraw={removeMember} />
     </div>
   );
 };
