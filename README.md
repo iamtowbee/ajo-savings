@@ -14,8 +14,6 @@ Ajo is a web application designed to help users save money collaboratively. Whet
 ## Features
 
 - **Group Savings**: Create and manage savings groups with friends or family.
-- **Progress Tracking**: Visualize your savings progress with charts and graphs.
-- **Notifications**: Get reminders for contributions and milestones.
 - **User Accounts**: Secure user authentication and profile management.
 - **Responsive Design**: Access the app from any device.
 
@@ -54,9 +52,9 @@ To get started with Ajo, follow the instructions below to set up the application
 Once the application is running, you can:
 
 - **Create an Account**: Enter your name and elect a tier to start saving.
-<!-- TODO: - **Join a Group**: Enter a group code to join an existing savings group. -->
 - **Make Contributions**: Add your contributions to the group savings.
-- **Track Progress**: View the savings progress and milestones achieved.
+- **Track Progress**: View the progress of savings and milestones achieved.
+<!-- TODO: - **Join a Group**: Enter a group code to join an existing savings group. -->
 
 ## Contributing
 
@@ -64,7 +62,7 @@ We welcome contributions! If you'd like to contribute to Ajo, please follow thes
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+3. Make and commit your changes (`git commit -m 'Add some feature'`).
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Open a pull request.
 
