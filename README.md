@@ -31,8 +31,8 @@ To get started with Ajo, follow the instructions below to set up the application
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/iamtowbee/web3bridge-test.git ajo-savings-app
-   cd ajo-savings-app
+   git clone https://github.com/iamtowbee/ajo-savings.git ajo-savings
+   cd ajo-savings
    ```
 
 2. **Install dependencies**:
