@@ -30,8 +30,11 @@ const RegisterForm: React.FC<RegisterProps> = ({ onAddMember, members }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
+    console.log("members list", members);
+    console.log("name", name);
+
     if (!name || !tier) return;
-    if (members.map((member) => member.name == name)) {
+    if (members.some((member: Member) => member.name === name)) {
       alert("Duplicate user!");
       return;
     }
